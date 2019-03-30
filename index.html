@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <a class="logo" href="#home">microsoft</a>
+      <nav class="nav header__nav">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link link" href="#">devices</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link link" href="#">software</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link link" href="#">Games & Entertainment</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link link" href="#">gift cards</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link link" href="#">Education & Business</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__aside">
+        <div class="header__search search">
+          <label for="search" class="search__icon"></label>
+          <input id="search" class="search__input" placeholder="I’m looking for…" type="text" />
+        </div>
+        <a href="#login" class="link header__aside-link">Sign in</a>
+        <a href="#basket" class="basket-button">go to basket</a>
+      </div>
+    </div>
+  </header>
+  <main class="content">
+    <div class="content-wrapper">
+      <section class="product">
+        <div class="preview">
+          <ul class="preview__list">
+            <li class="preview__item preview__item_active">
+              <a class="preview__item-link">
+                <img class="preview__item-image" src="xbox-one.jpg" alt="small preview xbox one">
+              </a>
+            </li>
+            <li class="preview__item">
+              <a class="preview__item-link">
+                <img class="preview__item-image" src="xbox-one.jpg" alt="small preview xbox one">
+              </a>
+            </li>
+            <li class="preview__item">
+              <a class="preview__item-link">
+                <img class="preview__item-image" src="xbox-one.jpg" alt="small preview xbox one">
+              </a>
+            </li>
+          </ul>
+          <div class="preview__product-wrapper">
+            <img class="preview__product" src="xbox-one.jpg" alt="photo xbox one">
+          </div>
+        </div>
+        <div class="product__info">
+          <header class="product__info-header">
+            <span class="label">on sale</span>
+            <h1 class="title product__title">Xbox One Wireless Controller</h1>
+            <p class="product__subheading">Accessories</p>
+            <div class="product__metadata">
+              <div class="price">
+                <span class="price__value">$39.99</span>
+                <s class="price__value price__value_previous">$59.99</s>
+              </div>
+              <div class="rating">
+                <ul class="rating__list">
+                  <li class="rating__item rating__item_selected">★</li>
+                  <li class="rating__item rating__item_selected">★</li>
+                  <li class="rating__item rating__item_selected">★</li>
+                  <li class="rating__item rating__item_selected">★</li>
+                  <li class="rating__item">★</li>
+                </ul>
+                <span class="rating__amount">(50)</span>
+              </div>
+            </div>
+            <form class="product__form" id="form">
+              <div class="radio-button-container">
+                <input class="radio radio-button_color_white" id="radioColorWhite" type="radio" name="color"
+                  value="white" checked>
+                <label class="radio-label radio-label_color_white" for="radioColorWhite"><span
+                    class="color-desc">White</span></label>
+                <input class="radio radio-button_color_black" id="radioColorBlack" type="radio" name="color"
+                  value="black">
+                <label class="radio-label radio-label_color_black" for="radioColorBlack"><span
+                    class="color-desc">Black</span></label>
+                <input class="radio radio-button_color_green" id="radioColorGreen" type="radio" name="color"
+                  value="green">
+                <label class="radio-label radio-label_color_green" for="radioColorGreen"><span
+                    class="color-desc">Green</span></label>
+              </div>
+              <div class="select-container">
+                <select class="quantity-select" name="quantity" id="quantity" form="form">
+                  <option value="1">Quantity (1)</option>
+                  <option value="2">Quantity (2)</option>
+                  <option value="3">Quantity (3)</option>
+                  <option value="4">Quantity (4)</option>
+                  <option value="5">Quantity (5)</option>
+                </select>
+              </div>
+              <button class="button button_primary button_big product__form-button">
+                <span class="product__form-button-text">add to cart</span>
+              </button>
+            </form>
+          </header>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>

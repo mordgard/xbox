@@ -1,0 +1,125 @@
+@media (max-width: 800px) {
+  .header__aside {
+    margin: 0;
+  }
+
+  .wrapper {
+    max-width: 90%;
+    justify-content: space-between;
+  }
+
+   .mobile-input-checkbox:checked + .mobile-button-shop  {
+    visibility: hidden;
+  }
+
+  .mobile-input-checkbox:checked + .mobile-button-shop::before  {
+    visibility: visible;
+    content: "Close";
+    color: #20c781;
+    border-top: 2px solid #20c781;
+    border-bottom: 2px solid #20c781;
+  }
+
+  .mobile-input-checkbox:checked ~ .mobile-nav-list {
+    transform: translateX(0%);
+    
+  }
+
+  .mobile-nav-list .nav-list__item {
+  }
+
+  .mobile-button-shop {
+    display: inline-block;
+    font-size: 1em;
+    text-decoration: none;
+    color: rgba(43, 43, 43, .5);
+    font-weight: 900;
+    text-transform: uppercase;
+    border-top: 2px solid rgba(43, 43, 43, .5);
+    border-bottom: 2px solid rgba(43, 43, 43, .5);
+  }
+
+  .logo {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    max-width: 122px;
+    max-height: 26px;
+  }
+
+  .mobile-search {
+    display: block;
+    font-size: 1.2em;
+    margin-right: 16px;
+    padding-bottom: 3px;
+    color: rgba(43, 43, 43, .5);
+  }
+
+  .content-wrapper, 
+  .product,
+  .preview {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-wrapper {
+    max-width: 90%;
+  }
+
+  .product {
+    max-width: 100%;
+  }
+
+  .preview__product-wrapper {
+    order: 1;
+  }
+
+  .preview__product {
+    max-width: 100%;
+  }
+
+  .preview__list {
+    order: 2;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .product__info {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-top: 50px;
+  }
+
+  .product__info-header {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .product__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .label {
+    align-self: flex-start;
+  }
+
+  .button_big {
+    max-width: 100%;
+  }
+
+  .quantity-select {
+    max-width: 100%;
+  }
+
+  .nav, 
+  .header__aside-link,
+  .header__search,
+  .bg-wrapper {
+    display: none;
+  }
+
+  
+}

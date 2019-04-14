@@ -40,6 +40,10 @@ ul {
   margin-left: auto;
 }
 
+.mobile-button-shop {
+  display: none;
+}
+
 .logo {
   display: inline-block;
   width: 158px;
@@ -68,6 +72,35 @@ ul {
   text-decoration: none;
   color: #2b2b2b;
   text-transform: uppercase;
+}
+
+.mobile-nav-list {
+  position: absolute;
+  top: 8%;
+  width: 90%;
+  transform: translateX(-120%);
+  display: flex;
+  flex-direction: column;
+  background-color: #20c781;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.mobile-input-checkbox {
+  display: none;
+}
+
+.mobile-button-shop:hover {
+  cursor: pointer;
+}
+
+.mobile-nav-list .nav-list__item {
+  margin: 2.5% 5%;
+  font-size: 2em;
+}
+
+.mobile-nav-list .nav-list__link {
+  color: #fff;
 }
 
 .header__aside {
@@ -104,6 +137,10 @@ ul {
   margin-right: 14px;
 }
 
+.mobile-search {
+  display: none;
+}
+
 .header__aside-link {
   margin-right: 11px;
 }
@@ -132,6 +169,8 @@ ul {
 }
 
 .preview__list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
 }
 
@@ -353,8 +392,8 @@ ul {
 .select-container::after {
   content: '';
   display: inline-block;
-  position: absolute; 
-  top: 73px;
+  position: absolute;
+  top: 98px;
   right: 15px;
   width: 16px;
   height: 15px;
@@ -487,3 +526,4 @@ ul {
   cursor: pointer;
   margin-bottom: 40px;
 }
+

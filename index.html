@@ -8,11 +8,32 @@
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/mobile.css">
+  <link rel="stylesheet" href="/fontello-36a1c459/css/fontello.css">
 </head>
 
 <body>
   <header class="header">
     <div class="wrapper">
+      <input type="checkbox" id="shopCheckbox" class="mobile-input-checkbox">
+      <label for="shopCheckbox" class="mobile-button-shop">shop</label>
+      <ul class="nav-list mobile-nav-list">
+        <li class="nav-list__item">
+          <a class="nav-list__link link" href="#">devices</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link link" href="#">software</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link link" href="#">Games & Entertainment</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link link" href="#">gift cards</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link link" href="#">Education & Business</a>
+        </li>
+      </ul>
       <a class="logo" href="#home">microsoft</a>
       <nav class="nav header__nav">
         <ul class="nav-list">
@@ -38,6 +59,7 @@
           <label for="search" class="search__icon"></label>
           <input id="search" class="search__input" placeholder="I’m looking for…" type="text" />
         </div>
+        <a href="#" class="mobile-search"><i class="icon-search"></i></a>
         <a href="#login" class="link header__aside-link">Sign in</a>
         <a href="#basket" class="basket-button">go to basket</a>
       </div>

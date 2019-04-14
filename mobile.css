@@ -121,5 +121,9 @@
     display: none;
   }
 
+  .select-container::after {
+    top: 98px;
+    right: 15px;
+  }
   
 }

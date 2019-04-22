@@ -21,7 +21,8 @@
   }
 
   .mobile-input-checkbox:checked ~ .mobile-nav-list {
-    transform: translateX(0%);
+    /* transform: translateX(0%); */
+    left: 5%;
     
   }
 
@@ -53,6 +54,10 @@
     margin-right: 16px;
     padding-bottom: 3px;
     color: rgba(43, 43, 43, .5);
+  }
+
+  .mobile-button-search:focus + .mobile-input-search {
+    display: block;
   }
 
   .content-wrapper, 
@@ -126,4 +131,5 @@
     right: 15px;
   }
   
+
 }

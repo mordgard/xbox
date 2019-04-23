@@ -21,12 +21,11 @@
   }
 
   .mobile-input-checkbox:checked ~ .mobile-nav-list {
-    /* transform: translateX(0%); */
     left: 5%;
-    
   }
 
   .mobile-nav-list .nav-list__item {
+
   }
 
   .mobile-button-shop {
@@ -52,8 +51,19 @@
     display: block;
     font-size: 1.2em;
     margin-right: 16px;
-    padding-bottom: 3px;
+    margin-bottom: 3px;
+    transition: all 1s;
+    width: 20px;
+    height: 20px;
     color: rgba(43, 43, 43, .5);
+  }
+
+  .mobile-search__input {
+    display: none;
+  }
+
+  .mobile-search__icon {
+
   }
 
   .mobile-button-search:focus + .mobile-input-search {
@@ -131,5 +141,4 @@
     right: 15px;
   }
   
-
 }
